@@ -22,7 +22,7 @@ if (!defined('WP_ENV')) {
  */
 function roots_sidebar_body_class($classes) {
   if (roots_display_sidebar()) {
-    $classes[] = 'sidebar-primary';
+    // Use TSTE instead
   }
   return $classes;
 }
@@ -47,7 +47,7 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
-      'is_front_page'
+      //'is_front_page'
     ),
     /**
      * Page template checks (via is_page_template())

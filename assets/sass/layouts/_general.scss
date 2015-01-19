@@ -3,8 +3,20 @@
 
 // Main content area
 .main {
-  @include make-sm-column($main-sm-columns);
+  //@include make-sm-column($main-sm-columns);
+  @include make-sm-column(12);
+
+
   .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+    @include make-sm-column(8);
+  }
+  .sidebar-right & {
+    @include make-sm-column(8);
+  }
+  .sidebar-left & {
+    @include make-sm-column(8);
+  }
+  .sandwitch & { 
+  	@include make-md-column(8);
   }
 }

@@ -1,11 +1,13 @@
 // Grid settings
 // -------------------------
-
+// UPD:
 $grid-columns:          12;
 $main-sm-columns:       $grid-columns;
-$sidebar-sm-columns:    4;
-
-
+$main-md-columns:       $grid-columns;
+$sidebar-sm-columns:    3;
+$sidebar-2-sm-columns:    2;
+$sidebar-md-columns:    3;
+$sidebar-2-md-columns:    2;
 
 // Brand colors
 // -------------------------

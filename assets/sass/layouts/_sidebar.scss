@@ -1,3 +1,25 @@
-.sidebar {
-  @include make-sm-column($sidebar-sm-columns);
+body.sandwitch, body.sidebar-right, body.sidebar-left {
+	.sidebar-left, .sidebar-right {
+		padding-top: 280px;
+	  & [class*="sidebar"] {
+	  	width: 100%;
+	  	padding-top: 15px;
+			padding-bottom: 15px;
+	  	background: rgba(0,0,0,0.03);
+	  }
+	}
+}
+body.sandwitch {
+	[class*="sidebar"] {
+		@extend .hidden-xs;
+		@extend .hidden-sm;
+		@include make-md-column(2);
+	  float: left;
+	}
+}
+body.sidebar-right, body.sidebar-left {
+	[class*="sidebar"] {
+		@include make-sm-column(4);//$sidebar-xs-columns
+	  @include make-xs-column(12);
+	}
 }
