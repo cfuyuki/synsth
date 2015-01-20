@@ -28,3 +28,5 @@ function roots_body_class($classes) {
   return $classes;
 }
 add_filter('body_class', 'roots_body_class');
+
+

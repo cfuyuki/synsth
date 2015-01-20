@@ -1,21 +1,31 @@
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    </div>
+<header class="header" role="banner">
+  <div id="nav">
+    
 
-    <nav class="collapse navbar-collapse" role="navigation">
-      <?php
-        if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-        endif;
-      ?>
-    </nav>
+    <a id="logo" href="<?php bloginfo( 'url' ); ?>">
+    <?php
+    	$logo = get_option( 'ts_logo' );
+		$logo_x2 = get_option( 'ts_logo_x2' );
+
+		if ( $logo == '' ) {
+			$logo = get_template_directory_uri() . '/images/logo_tools.png';
+		}
+		if ( $logo_x2 == '' ) {
+			$logo_x2 = $logo;
+		}
+	?>
+		<img class="default" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+		<img class="retina" src="<?php echo $logo_x2; ?>" alt="<?php bloginfo('name'); ?>" />
+    </a>
+    
+    <a id="menu" href="#"><i class="fa fa-reorder"></i></a>
+
+    
+  
+  </div>
+  <div id="page-header">
+    <h1>
+      <?php echo roots_title(); ?>
+    </h1>
   </div>
 </header>

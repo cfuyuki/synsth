@@ -6,7 +6,8 @@
 .hentry footer { }
 
 /* Single */
-.entry-title {
+body[class*="sngl"] .entry-title {
 	height: 180px;
 	margin: 80px 0 20px;
+	text-align: center;
 }

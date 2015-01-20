@@ -1,6 +1,95 @@
-.banner { }
+#nav { 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    //background: rgba(0,0,0,0.05);
+    height: 260px;
+    @media (min-width: $screen-md-min) {
+      padding-left: 110px;
+      padding-right: 110px;
+      padding-top: 100px;
+    }
+
+ }
+/*
+.jumbo-buttons-wrapper {
+
+    right: 30px !important;
+    top: 19px !important;
+    @media (min-width: $screen-md-min) {
+      top: 96px !important;
+      right: 120px !important;
+      
+    }
+    .jumbo-menu-button {
 
 
+      padding: 8px 9px 8px 9px;
+      display: block;
+      border-radius: 2px;
+      border: 2px solid #000;
+        div{
+            color: #000;
+            font-size: 18px;
+
+        }
+    }
+    .jumbo-secondary-menu-button  {
+      height: 48px;
+      border-radius: 2px;
+      border: 2px solid #000;
+      i{
+        margin: 10px 0 0 10px;
+      -webkit-margin-before: 16px;
+      }
+     } 
+}*/
+
+#logo {
+   display: inline-block;
+   float: left;
+   margin-left: 2px;
+}
+#logo .retina {
+   display: none;
+}
+    
+
+a#menu {
+  float: right;
+  height: 45px;
+  width: 45px;
+  display: block;
+  border-radius: 2px;
+  border: 2px solid #000;
+  i {
+    color: #000;
+    font-size: 18px;
+    margin-left: 13px;
+    margin-top: 11px;
+  }
+  
+}
+
+#page-header {
+    //position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    height: 260px;
+    h1 {
+        margin: 0 20px;
+        font-size: 42px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.2);
+        letter-spacing: -2.5px;
+        font-family: "raleway";
+    }
+}
 // MLVLMENU: 
 .dropdown-submenu {
     position: relative;
@@ -48,4 +137,18 @@
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+
+/* ------------------------
+-----   Retina adjustments    -----
+------------------------------*/
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){ 
+
+   #logo .default {
+      display: none !important;
+   }
+   #logo .retina {
+      display: block;
+   }
 }
