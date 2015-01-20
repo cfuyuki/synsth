@@ -1,6 +1,6 @@
 body.sandwitch, body.sidebar-right, body.sidebar-left {
 	.sidebar-left, .sidebar-right {
-		
+		z-index: 7;
 	  & [class*="sidebar"] {
 	  	width: 100%;
 	  	padding-top: 15px;

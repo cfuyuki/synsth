@@ -28,7 +28,7 @@ $sidebar = $ts_funcs->opt_sidebar();
 	      <?php if ( $layout==='sandwitch' || $layout==='sidebar-left' ) : ?>
 
             
-  	        <aside class="sidebar-left ts-sticky-adv-left" role="complementary" data-top="80"><!-- Sticky Child -->
+  	        <aside class="sidebar-left ts-sticky-adv-left" role="complementary" data-top="100"><!-- Sticky Child -->
               <?php if(!empty($sidebar['left'])): ?>
                 <div id = "ts-acc-hover" class = "sidebar-left-inner">  <!-- Accordion Parent -->
     	            <?php include roots_sidebar_path('sidebar-left'); ?>
@@ -46,7 +46,7 @@ $sidebar = $ts_funcs->opt_sidebar();
       <?php if (roots_display_sidebar()) : ?>
         <?php if ( $layout==='sandwitch' || $layout==='sidebar-right' ) : ?>
 
-          <aside class="sidebar-right ts-sticky-adv-right" role="complementary" data-top="80"><!-- Sticky Child -->
+          <aside class="sidebar-right ts-sticky-adv-right" role="complementary" data-top="100"><!-- Sticky Child -->
             <?php if(!empty($sidebar['right'])): ?>
               <div class = "sidebar-right-inner"> 
                 <?php include roots_sidebar_path('sidebar-right'); ?>

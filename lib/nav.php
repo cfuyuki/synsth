@@ -86,7 +86,7 @@ function roots_nav_menu_args($args = '') {
 
   if (!$args['depth']) {
     // MLVLMENU: Set menu depth from 2 to n
-    $roots_nav_menu_args['depth'] = 3;
+    $roots_nav_menu_args['depth'] = 4;
   }
 
   if (!$args['walker']) {

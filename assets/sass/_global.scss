@@ -1,6 +1,15 @@
-body {
-	font-family: "roboto";
+//BOOTSTRAP COMMENT OUT
+.btn {
+ //border: 1px solid transparent;
+ &:hover,
+  &:focus,
+  &.focus {
+    //color: $btn-default-color;
+  }
 }
+
+
+
 
 // FIXS:
 img {
