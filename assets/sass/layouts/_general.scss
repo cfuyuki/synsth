@@ -1,8 +1,13 @@
+body {
+  background-color: $brand-bg;
+}
+
 // Content wrapper
 .wrap { }
 
 // Main content area
 .main {
+  margin-top: -1px; // bug fix for sticky element
   //@include make-sm-column($main-sm-columns);
   @include make-sm-column(12);
 

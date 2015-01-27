@@ -2,7 +2,6 @@
 
   &>.ts-sticky-simple{
     position: relative;
-    
   }
   &>.fixed {
     top: 0;
@@ -26,7 +25,6 @@
     z-index: 100;
     width: 100%;
     position: relative;
-
  }
 
 #logo {
@@ -35,7 +33,7 @@
    padding-top: 6px; /* ----------10px */
    img {
     padding: 3px;
-    background: white;
+    background: $brand-bg;
    }
 }
 #logo .retina {
@@ -44,7 +42,7 @@
 #menu {
   float: right;
   padding-top: 10px; /* ----------10px */
-  background: white;
+  background: $brand-bg;
   .btn {
     height: 45px;
     width: 45px;
@@ -57,7 +55,7 @@
     position: absolute;
     margin: 0 auto;
     width: 100%;
-    background: white;
+    background: $brand-bg;
     padding-top: 10px;   /* ----------10px */
     h1 {
         margin: 0 auto;
