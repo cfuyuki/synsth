@@ -134,4 +134,3 @@ function ts_customizer( $wp_customize ) {
 }
 
 add_action('customize_register', 'Ts_customizer');
-*/

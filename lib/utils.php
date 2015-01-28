@@ -17,12 +17,13 @@ add_filter('get_search_form', 'roots_get_search_form');
 
 /**
  * Add page slug to body_class() classes if it doesn't exist
+ * Synsth: this should be disabled for sites have page names with bootstrap component like modal and popover
  */
 function roots_body_class($classes) {
   // Add post/page slug
   if (is_single() || is_page() && !is_front_page()) {
     if (!in_array(basename(get_permalink()), $classes)) {
-      $classes[] = basename(get_permalink());
+      //$classes[] = basename(get_permalink());
     }
   }
   return $classes;

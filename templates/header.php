@@ -1,5 +1,6 @@
-<header class="header ts-sticky-simple-parent" role="banner">
-<div class="ts-sticky-simple">
+<header class="header " role="banner" class="" >
+<div class="header-inner ts-sticky-simple" data-top=0 style="">
+  <div id="header-nav">
   <div id="nav" class="">
     
 
@@ -41,6 +42,7 @@
       <?php echo roots_title(); ?>
     </h1>
     <?php include roots_sidebar_path('sidebar-top'); ?>
+  </div>
   </div>
 </div>
 </header>

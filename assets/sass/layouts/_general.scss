@@ -1,5 +1,6 @@
 body {
   background-color: $brand-bg;
+
 }
 
 // Content wrapper
@@ -11,6 +12,8 @@ body {
   //@include make-sm-column($main-sm-columns);
   @include make-sm-column(12);
 
+  margin: 0 auto !important; 
+  float: center !important;
 
   .sidebar-primary & {
     @include make-sm-column(8);

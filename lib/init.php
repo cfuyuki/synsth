@@ -91,7 +91,7 @@ add_action('widgets_init', 'roots_widgets_init');
 
 /**
  * Adds the individual sections, settings, and controls to the theme customizer
- 
+
 function ts_register_theme_customizer( $wp_customize ) {
  
     $wp_customize->add_setting(

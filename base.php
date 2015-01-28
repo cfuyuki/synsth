@@ -8,7 +8,7 @@ $sidebar = $ts_funcs->opt_sidebar();
 
 <?php get_template_part('templates/head'); ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('ts-sticky-simple-parent'); ?>>
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
@@ -24,11 +24,28 @@ $sidebar = $ts_funcs->opt_sidebar();
   <div class="wrap container" role="document">
     <div class="content row ts-sticky-adv-parent vertical"> <!-- Sticky Parent -->
 
+
+      <?php if (roots_display_sidebar()) : ?>
+        <?php if ( $layout==='sandwitch' || $layout==='sidebar-right' ) : ?>
+
+          <aside class="sidebar-right ts-sticky-adv-right" role="complementary" data-top="120"><!-- Sticky Child -->
+            <?php if(!empty($sidebar['right'])): ?>
+              <div class = "sidebar-right-inner"> 
+                <?php include roots_sidebar_path('sidebar-right'); ?>
+              </div>
+            <?php endif; ?>
+          </aside><!-- /.sidebar -->
+          
+
+        <?php endif; ?>
+      <?php endif; ?>
+
+
     	<?php if (roots_display_sidebar()) : ?>
 	      <?php if ( $layout==='sandwitch' || $layout==='sidebar-left' ) : ?>
 
             
-  	        <aside class="sidebar-left ts-sticky-adv-left" role="complementary" data-top="100"><!-- Sticky Child -->
+  	        <aside class="sidebar-left ts-sticky-adv-left"role="complementary" data-top="120"><!-- Sticky Child -->
               <?php if(!empty($sidebar['left'])): ?>
                 <div id = "ts-acc-hover" class = "sidebar-left-inner">  <!-- Accordion Parent -->
     	            <?php include roots_sidebar_path('sidebar-left'); ?>
@@ -40,23 +57,12 @@ $sidebar = $ts_funcs->opt_sidebar();
 	    <?php endif; ?>
 
       <main class="main" role="main">
+        <div style="float:left;">
         <?php include roots_template_path(); ?>
+        </div>
       </main><!-- /.main -->
 
-      <?php if (roots_display_sidebar()) : ?>
-        <?php if ( $layout==='sandwitch' || $layout==='sidebar-right' ) : ?>
-
-          <aside class="sidebar-right ts-sticky-adv-right" role="complementary" data-top="100"><!-- Sticky Child -->
-            <?php if(!empty($sidebar['right'])): ?>
-              <div class = "sidebar-right-inner"> 
-                <?php include roots_sidebar_path('sidebar-right'); ?>
-              </div>
-            <?php endif; ?>
-          </aside><!-- /.sidebar -->
-          
-
-        <?php endif; ?>
-      <?php endif; ?>
+      
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
