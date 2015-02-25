@@ -25,7 +25,7 @@
     <?php echo do_shortcode('
     	[ts_modal id="menu" type="fullscreen"]
     	[ts_modal_button]
-    	[bs_button style="btn tmpl-line" icon="fa fa-reorder" type="button" title=""]
+    	[bs_button style="btn btn-menu tmpl-line" icon="glyphicon glyphicon-menu-hamburger" type="button" title=""]
     	[/ts_modal_button]
     	[ts_modal_header]'
     	. '<h1 style="height:100px">' . '<img class="default aligncenter" src="' . $logo . '" />' . '</h1>'

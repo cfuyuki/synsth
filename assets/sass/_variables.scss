@@ -19,3 +19,10 @@ $brand-bg:         		#fdfdfd;
 // -------------------------
 
 $icon-font-path:        "../vendor/bootstrap-sass-official/assets/fonts/";
+
+
+// X Large screen / super wide desktop
+$screen-xl:                  1440px !default;
+$screen-xl-min:              $screen-xl !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xl-desktop:          $screen-xl-min !default;

@@ -28,3 +28,7 @@ body {
   	@include make-md-column(8);
   }
 }
+.main-inner {
+  float:left;
+  width: 100%;
+}

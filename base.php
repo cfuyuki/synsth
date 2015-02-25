@@ -57,7 +57,7 @@ $sidebar = $ts_funcs->opt_sidebar();
 	    <?php endif; ?>
 
       <main class="main" role="main">
-        <div style="float:left;">
+        <div class="main-inner">
         <?php include roots_template_path(); ?>
         </div>
       </main><!-- /.main -->

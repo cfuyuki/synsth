@@ -15,7 +15,7 @@ body.sandwitch, body.sidebar-right, body.sidebar-left {
 body.sandwitch {
 	aside[class*="sidebar"] {
 		float: left;
-		width: 16.0%; // Fix above when 16.666% does not fit in the location
+		width: 16.0%; //Fix above when 16.666% does not fit in the location
 	}
 	[class*="sidebar"] {
 		@include make-md-column(2);
