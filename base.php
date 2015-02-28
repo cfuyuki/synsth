@@ -35,7 +35,6 @@ $sidebar = $ts_funcs->opt_sidebar();
               </div>
             <?php endif; ?>
           </aside><!-- /.sidebar -->
-          
 
         <?php endif; ?>
       <?php endif; ?>

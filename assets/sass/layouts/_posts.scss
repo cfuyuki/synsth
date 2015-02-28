@@ -5,6 +5,9 @@
 .hentry .entry-content { }
 .hentry footer { }
 
+body[class*="loop"] .entry-title {
+  margin-top: 0;
+}
 /* Single */
 body[class*="sngl"] .entry-title {
 	height: 180px;
